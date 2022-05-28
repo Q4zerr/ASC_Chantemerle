@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+    AVET Tanguy le 15/02/2022
+    Derniere Modification le 25/03/2022
+    page_calendrier.html
+    Page HTML pour le calendrier du club de basket-ball ASC Chantemerle
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/logo-detoure.svg" type="images/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@286&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed61ff2ae5.js" crossorigin="anonymous"></script>
+    <title>ASC - Chantemerle</title>
+</head>
+<body>
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="navbar dark-mode" role="navigation">
+        <a href="index.html"><h1 id="logo">ASC - Chantemerle</h1></a>
+        <ul class="navbar__links">
+            <li class="navbar__link first"><a href="index.html">Accueil</a></li>
+            <li class="navbar__link second"><a href="page_sponsor.html">Partenaires</a></li>
+            <li class="navbar__link third"><a href="page_classement.html">Classement</a></li>
+            <li class="navbar__link four"><a href="page_calendrier.html">Calendrier</a></li>
+            <li class="navbar__link fifth"><a href="page_contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <!-- CALENDRIER -->
+    <section class="start">
+        <h2>Calendrier</h2>
+        <h3>ASC - Chantemerle</h3>
+        <a href="#calendrier-info"><button>Découvrir</button></a>
+    </section>
+    <!-- Titre au dessus de l'API -->
+    <h4 class="calendrier-titre">Retrouvez-ci dessous les matchs et résultats du club !</h4>
+    <!-- Intégration de l'API Scorenco pour l'ASC Chantemerle -->
+    <section class="calendrier-bottom" id="calendrier-info">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script><script>if(!window._rsz){window._rsz=function(){var i=iFrameResize({checkOrigin:false,interval:100});};if(document.readyState!="loading"){_rsz()}else{document.addEventListener("DOMContentLoaded",_rsz)}}</script><iframe id="62370d060d41b30a1a7a8b83" src="https://scorenco.com/widget/62370d060d41b30a1a7a8b83/?auto_height=true" style="display: block; width: 75%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe><a style="font-size:11px" target="_blank" href="https://scorenco.com/basket/clubs/chantemerle-les-bles-as/">Chantemerle les Bles AS sur Score'n'co</a>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h5>ASC Chantemerle-Les-Blés</h5>
+            <p>Association créée le 24 juin 1956.</p>
+            <!-- Utilisation de Font Awesome pour les icones -->
+            <!-- Lien pour chercher un icon https://fontawesome.com/icons -->
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/Chantemerle-les-Bl%C3%A9s-A-S-422573494473437/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="index.html" target="_self"><i class="fa fa-house"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2022 ASC Chantemerle. Designed By <span>Tanguy AVET</span></p>
+        </div>
+    </footer>
+<script src="js/function.js"></script> <!-- Chargement du fichier Javascript pour le menu -->
+</body>
+</html>

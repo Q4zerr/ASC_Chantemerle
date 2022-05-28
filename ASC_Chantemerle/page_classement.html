@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+    AVET Tanguy le 15/02/2022
+    Derniere Modification le 25/03/2022
+    page_classement.html
+    Page HTML pour le classement du club de basket-ball ASC Chantemerle
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/logo-detoure.svg" type="images/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@286&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed61ff2ae5.js" crossorigin="anonymous"></script>
+    <title>ASC - Chantemerle</title>
+</head>
+<body>
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="navbar dark-mode" role="navigation">
+        <a href="index.html"><h1 id="logo">ASC - Chantemerle</h1></a>
+        <ul class="navbar__links">
+            <li class="navbar__link first"><a href="index.html">Accueil</a></li>
+            <li class="navbar__link second"><a href="page_sponsor.html">Partenaires</a></li>
+            <li class="navbar__link third"><a href="page_classement.html">Classement</a></li>
+            <li class="navbar__link four"><a href="page_calendrier.html">Calendrier</a></li>
+            <li class="navbar__link fifth"><a href="page_contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <!-- CLASSEMENT -->
+    <section class="start">
+        <h2>Classement</h2>
+        <h3>ASC - Chantemerle</h3>
+        <a href="#classement-info-M1"><button>Découvrir</button></a>
+    </section>
+    <!-- Titre au dessus de l'API -->
+    <h4 class="classement-titre">Retrouvez ici le classement du club !</h4>
+    <!-- Intégration des API Scorenco pour l'ASC Chantemerle -->
+    <!-- Classement pour les Sénior M1 -->
+    <section id="classement-info-M1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script><script>if(!window._rsz){window._rsz=function(){var i=iFrameResize({checkOrigin:false,interval:100});};if(document.readyState!="loading"){_rsz()}else{document.addEventListener("DOMContentLoaded",_rsz)}}</script><iframe id="624b0c30bb603b0a2337b2a4" src="https://scorenco.com/widget/624b0c30bb603b0a2337b2a4/?auto_height=true" style="display: block; width: 60%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe><a style="font-size:11px" target="_blank" href="https://scorenco.com/basket/clubs/as-chantemerle-les-bles/">AS Chantemerle les blés sur Score'n'co</a>
+    </section>
+    <!-- Classement pour les Sénior M2 -->
+    <section class="classement-bottom">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.5/iframeResizer.min.js"></script><script>if(!window._rsz){window._rsz=function(){var i=iFrameResize({checkOrigin:false,interval:100});};if(document.readyState!="loading"){_rsz()}else{document.addEventListener("DOMContentLoaded",_rsz)}}</script><iframe id="624b0e66bb603b5dce65bb84" src="https://scorenco.com/widget/624b0e66bb603b5dce65bb84/?auto_height=true" style="display: block; width: 60%; overflow: auto; margin: auto; border-width: 0px;" scrolling="no"></iframe><a style="font-size:11px" target="_blank" href="https://scorenco.com/basket/clubs/as-chantemerle-les-bles/">AS Chantemerle les blés sur Score'n'co</a>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h5>ASC Chantemerle-Les-Blés</h5>
+            <p>Association créée le 24 juin 1956.</p>
+            <!-- Utilisation de Font Awesome pour les icones -->
+            <!-- Lien pour chercher un icon https://fontawesome.com/icons -->
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/Chantemerle-les-Bl%C3%A9s-A-S-422573494473437/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="index.html" target="_self"><i class="fa fa-house"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2022 ASC Chantemerle. Designed By <span>Tanguy AVET</span></p>
+        </div>
+    </footer>
+<script src="js/function.js"></script> <!-- Chargement du fichier Javascript pour le menu -->
+</body>
+</html>
